@@ -1,6 +1,13 @@
+Business Logic Tests:
 Returns one quarter
 Returns multiple quarters
 Returns multiple quarters and dimes
 Returns multiple quarters and dimes and nickels
 Returns multiple quarters and dimes and nickels and pennies
 Test for less than a quarter
+
+
+UI Tests:
+Test homepage is working
+Test results page is working
+Test userInput returns correct value
