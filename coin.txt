@@ -1,0 +1,12 @@
+Returns one quarter
+Returns multiple quarters
+Returns multiple quarters and dimes
+Returns one dime
+Returns multiple dimes
+Returns multiple dimes and nickels
+Returns one nickel
+Returns multiple nickels
+Returns multiple nickels and pennies
+Returns one penny
+Returns multiple pennies
+User Input can only handle integer numbers
