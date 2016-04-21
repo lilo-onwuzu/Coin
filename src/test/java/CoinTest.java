@@ -67,7 +67,7 @@ public class CoinTest {
     expected.add(0);
     expected.add(0);
     expected.add(0);
-    expected.add(1);
+    expected.add(0);
     assertEquals(expected, testCoin.checkCoin(0));
   }
 }
