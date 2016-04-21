@@ -26,6 +26,9 @@ public class Coin {
              Integer numPennies = cent/1;
              cent = cent%1;
              newArrayList.set(3,numPennies);
+            //  if (cent == 0){
+            //    newArrayList.set(3,0);
+            //  }
            }
         }
       }

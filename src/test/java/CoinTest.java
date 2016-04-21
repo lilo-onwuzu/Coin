@@ -59,4 +59,15 @@ public class CoinTest {
     expected.add(3);
     assertEquals(expected, testCoin.checkCoin(68));
   }
+
+  @Test
+  public void checkCoin_testForZero() {
+    Coin testCoin = new Coin();
+    ArrayList<Integer> expected = new ArrayList();
+    expected.add(0);
+    expected.add(0);
+    expected.add(0);
+    expected.add(1);
+    assertEquals(expected, testCoin.checkCoin(0));
+  }
 }
