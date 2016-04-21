@@ -16,4 +16,15 @@ public class CoinTest {
     assertEquals(expected, testCoin.checkCoin(25));
   }
 
+  @Test
+  public void checkCoin_testForMultipleQuarters_X() {
+    Coin testCoin = new Coin();
+    ArrayList<Integer> expected = new ArrayList();
+    expected.add(2);
+    expected.add(0);
+    expected.add(0);
+    expected.add(0);
+    assertEquals(expected, testCoin.checkCoin(50));
+  }
+
 }

@@ -12,11 +12,11 @@ public class Coin {
     Integer numQuarters;
     Number remQuarters;
 
-    if (cent >= 25) {
+    if (cent == 25) {
       numQuarters = cent/25;
       remQuarters = cent%25;
       newArrayList.set(0,numQuarters);
-    } 
+    }
     return newArrayList;
   }
 }
