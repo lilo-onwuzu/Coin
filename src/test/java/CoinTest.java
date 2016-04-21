@@ -70,4 +70,15 @@ public class CoinTest {
     expected.add(0);
     assertEquals(expected, testCoin.checkCoin(0));
   }
+
+  @Test
+  public void checkCoin_lessThanAQuarter(){
+    Coin testCoin = new Coin ();
+    ArrayList<Integer> expected = new ArrayList();
+    expected.add(0);
+    expected.add(1);
+    expected.add(0);
+    expected.add(0);
+    assertEquals(expected, testCoin.checkCoin(10));
+  }
 }
