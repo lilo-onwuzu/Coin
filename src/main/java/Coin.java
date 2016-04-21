@@ -9,14 +9,16 @@ public class Coin {
     newArrayList.add(0);
     newArrayList.add(0);
     newArrayList.add(0);
-    Integer numQuarters;
-    Number remQuarters;
 
-    if (cent >= 25) {
-      numQuarters = cent/25;
-      remQuarters = cent%25;
+    while (cent >= 25) {
+      Integer numQuarters = cent/25;
+      cent = cent%25;
       newArrayList.set(0,numQuarters);
-    }
+    //  while (cent >= 10){
+    //   Integer numDimes = cent/10;
+    //   cent = cent%10;
+    //   newArrayList.set(1,numDimes);
+      }
     return newArrayList;
   }
 }
