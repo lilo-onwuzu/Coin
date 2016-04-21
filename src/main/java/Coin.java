@@ -1,7 +1,42 @@
+import java.util.Random;
+import java.util.Map;
+import java.util.HashMap;
+import spark.ModelAndView;
+import spark.template.velocity.VelocityTemplateEngine;
+import static spark.Spark.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Coin {
+  public static void main(String[] args){
+    Coin newCoin = new Coin();
+
+    String layout = "templates/layout.vtl";
+
+    get ("/", (request, response) -> {
+      HashMap model = new HashMap();
+      model.put("template", "templates/home.vtl");
+      return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
+
+    get("/results", (request, response) -> {
+      HashMap model = new HashMap();
+      model.put("template", "templates/results.vtl");
+      Integer importInput = Integer.parseInt(request.queryParams("userInput"));
+      ArrayList<Integer> resFull = new ArrayList<Integer>(newCoin.checkCoin(importInput));
+      Integer resQuarters = resFull.get(0);
+      Integer resDimes = resFull.get(1);
+      Integer resNickels = resFull.get(2);
+      Integer resPennies = resFull.get(3);
+
+      model.put("importInput", importInput);
+      model.put("resQuarters", resQuarters);
+      model.put("resDimes", resDimes);
+      model.put("resNickels", resNickels);
+      model.put("resPennies", resPennies);
+      return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
+  }
 
   public ArrayList<Integer> checkCoin(Integer cent){
     ArrayList<Integer> newArrayList = new ArrayList<Integer>();

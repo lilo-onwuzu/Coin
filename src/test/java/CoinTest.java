@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class CoinTest {
 
-  @Test
+  @Test   
   public void checkCoin_testForOneQuarter_1() {
     Coin testCoin = new Coin();
     ArrayList<Integer> expected = new ArrayList();
