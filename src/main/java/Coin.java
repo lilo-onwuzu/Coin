@@ -15,9 +15,14 @@ public class Coin {
       cent = cent%25;
       newArrayList.set(0,numQuarters);
      while (cent >= 10){
-      Integer numDimes = cent/10;
-      cent = cent%10;
-      newArrayList.set(1,numDimes);
+        Integer numDimes = cent/10;
+        cent = cent%10;
+        newArrayList.set(1,numDimes);
+         while (cent >= 5) {
+           Integer numNickels = cent/5;
+           cent = cent%5;
+           newArrayList.set(2,numNickels);
+        }
       }
     }
     return newArrayList;
