@@ -22,6 +22,7 @@ public class Coin {
            Integer numNickels = cent/5;
            cent = cent%5;
            newArrayList.set(2,numNickels);
+          //  while (cent >= 1)
         }
       }
     }

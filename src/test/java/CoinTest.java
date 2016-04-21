@@ -37,6 +37,7 @@ public class CoinTest {
     expected.add(0);
     assertEquals(expected, testCoin.checkCoin(60));
   }
+
   @Test
   public void checkCoin_testForMultipleNickels_X() {
     Coin testCoin = new Coin();
@@ -46,5 +47,16 @@ public class CoinTest {
     expected.add(1);
     expected.add(0);
     assertEquals(expected, testCoin.checkCoin(65));
+  }
+
+  @Test
+  public void checkCoin_testForMultiplePennies_X() {
+    Coin testCoin = new Coin();
+    ArrayList<Integer> expected = new ArrayList();
+    expected.add(2);
+    expected.add(1);
+    expected.add(1);
+    expected.add(3);
+    assertEquals(expected, testCoin.checkCoin(68));
   }
 }
