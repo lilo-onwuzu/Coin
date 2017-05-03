@@ -16,9 +16,9 @@
 	The unit testing of the backend is done using jUnit. 
 	The integration testing of the user interface was done using Selenium Webdriver tests and a FluentLenium Adapter. 
 	All testing dependencies were managed using Gradle.
-
-#### _Setup/Installation Requirements_
-	 
+	No database backing.
+	
+#### _Setup/Installation Requirements_	 
   	Clone this repository
 	Install Gradle (a build & test automation program that will manage all our dependencies)
 	Build in the terminal using 'gradle run' command
@@ -32,8 +32,8 @@
 	lpr422@gmail.com
 	
 #### _Technologies Used_
-	HTML, CSS, Object Oriented Java, SQL on POSTGREs DB, Selenium Web Driver- UI Testing, Fluentinum Adapter, Gradle, BDD Testing, 
-	jUnit backend testing, Spark Framework, Velocity Templates, Velocity Template Engine, RESTful routing, Gradle Dependency Manager 
+	HTML, CSS, Object Oriented Java, Selenium Web Driver- UI Testing, Fluentinum Adapter, BDD Testing,  Gradle Dependency Manager
+	jUnit backend testing, Spark Framework, Velocity Templates, Velocity Template Engine, RESTful routing 
  
 
 #### _License_
